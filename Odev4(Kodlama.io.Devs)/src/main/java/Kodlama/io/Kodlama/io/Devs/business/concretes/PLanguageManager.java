@@ -28,7 +28,7 @@ public class PLanguageManager implements PLanguageService {
 
     @Override
     public void add(ProgrammingLanguage language)throws Exception{
-
+        languages=pLanguageRepository.getAll();
         for (ProgrammingLanguage language1:languages){
             if (language1.getName().equals(language.getName())){
                 throw new Exception(language.getName() + "Zaten kayıtlı.");

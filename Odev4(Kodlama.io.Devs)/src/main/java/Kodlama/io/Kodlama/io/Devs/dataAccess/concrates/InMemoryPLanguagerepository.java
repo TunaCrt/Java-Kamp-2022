@@ -40,7 +40,7 @@ public class InMemoryPLanguagerepository implements PLanguageRepository {
 
     @Override
     public void delete(int id) {
-        programmingLanguages.remove(id);
+        programmingLanguages.remove(id-1);
 
     }
 
