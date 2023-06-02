@@ -1,0 +1,96 @@
+--https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+--yukarıda verilen adreste bu kodları deneyebilirsiniz
+
+--Select: Customer tablosundaki bütün verileri getirir.
+SELECT * FROM Customers
+
+--Customer tablosundaki ContactName, CompanyName, City kısımlarını çıktı olarak verir.
+SELECT ContactName adi, CompanyName as şirketismi, City as şehir FROM Customers
+
+--Customer tablosundaki city'si berlin olanları getirir.
+SELECT * from Customers where City = 'Berlin'
+
+--Case insensitive: harflerin büyük küçük olması herhangi bir sorun teşkil etmez.
+
+--product tablosunda categoryId'si 1 olan ya da 3 olanları getirir.
+Select * from Products where CategoryID=1 or CategoryID=3
+
+--product tablosunda categoryId'si 1 olan ve unitprice'ı 10'a eşit ya da 10'dan büyük olanları getirir.
+Select * from Products where CategoryID=1 and UnitPrice>=10
+
+--order by: sırala demek
+
+--Bütün productları seç ve önce categoryId'sine göre ve sonra da ProductName'e göre sırala demektir.
+SELECT * FROM Products ORDER BY  CategoryID,ProductName 
+
+--Product'ların hepsini seç ve UnitPrice'a göre sırala demektir.
+SELECT * FROM Products ORDER BY UnitPrice
+
+--asc: artan UnitPrice'a göre sırala
+SELECT * FROM Products ORDER BY UnitPrice asc
+
+--desc: azalan UnitPrice'a göre sırala
+SELECT * FROM Products ORDER BY UnitPrice desc
+
+--bütün ürünleri categoryId'si 1 olanları bul ve bunları artan UnitPrice'a göre sırala demektir.
+SELECT * FROM Products where CategoryID = 1 ORDER BY UnitPrice asc
+
+--count: bana bütün product tablosunda kaç ürün var onu gösterir.
+SELECT count(*) from Products
+
+--Product tablosunda categoryId'si 2 olan kaç tane ürünüm var.
+SELECT count(*) as Adet from Products where CategoryID = 2
+
+--Product tablomdaki bütün categoryId'lere bak ve onları tekrar etmeyecek şekilde bana sırala.
+--NOT: group by kullanımında select edilen şey sadece ama sadece group by da yapılması istenen şey olabilir.
+--NOT2: count(*) yazdığımız için her bir categoryId için sayımı yapar.
+SELECT CategoryID,count(*) FROM Products GROUP BY CategoryID
+
+--Group by da yazılan kümilatif dataya yazılan koşul having olarak yazılır. (sum,avg vb şeyler kümülatif data)
+--bana ürün sayısı 10'dan az olan kategorileri getir.
+SELECT CategoryID,count(*) FROM Products GROUP BY CategoryID having count(*)<10
+
+--Önce her zaman where çalışır. Yani önce unitPrice'ı 20 den büyük olanları getir sonrasında categoryId'e göre grupla ve sayıları 10'dan küçük olanları getir.
+SELECT CategoryID,count(*) FROM Products where UnitPrice>20 GROUP BY CategoryID having count(*)<10
+
+--Join: tabloları birleştirme işlemi demektir.
+-- product tablosunu categories tablosuyla birleştirip 
+--Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName kısımları getir diyoruz.
+--Not: maksat kullanıcı tarafından cattegoryId numerik olarak gözükmesin diyedir.
+--Not2: Inner Join sadece iki tabloda da eşleşen dataları bir araya getirir.
+SELECT Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName 
+FROM Products inner join Categories 
+on Products.CategoryID=Categories.CategoryID
+
+--DTO -> data transformation object demektir.
+
+--Fiyatı 10'dan büyük olan products'ları categoryName'i de göstererek getirecek olan sorgudur.
+SELECT Products.ProductID, Products.ProductName, Products.UnitPrice, Categories.CategoryName 
+FROM Products inner join Categories 
+on Products.CategoryID=Categories.CategoryID
+where Products.UnitPrice>10
+
+
+select count(*) from [Order Details]
+
+--Inner join sadece eşleşen kayıtları getirir.
+--Left join Products as p left join [Order Details] buna göre solda olup sağda olmayanları da getirir.
+--Yani aşağıdaki srogu ürünlerde olup sipariş detayında olmayan ürün yok.
+Select * from Products as p left join [Order Details] as od
+on p.ProductID=od.ProductID 
+
+--inner joinde 830 tane sipariş geldi.
+--left joinde 832 tane geldi. Bu neden üye olmuş fakat herhangi bir sipariş oluşturmamış kişiler vardır.
+--Kampanya yönetimi sayfaları için kullanılabilir.
+--is null: siparişlerde gelmeyen boş dataları veritabanından çeker.
+SELECT * from Customers as c left join Orders as o 
+on c.CustomerID = o.CustomerID
+where o.CustomerID is null
+
+--right join sağda olup solda olmayanları da getir demek.
+
+--Birden fazla tabloları birleştirmek istediğimizde aşağıdaki sorguyu uygularız.
+Select * from Products as p inner join [Order Details] as od
+on p.ProductID=od.ProductID 
+inner join Orders o 
+on o.OrderID = od.OrderID
