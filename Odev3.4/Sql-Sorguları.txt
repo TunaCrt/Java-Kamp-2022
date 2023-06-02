@@ -1,3 +1,5 @@
+--https://www.youtube.com/watch?v=r_pbdopB4LU&list=PLqG356ExoxZVN7rC0KmMo0lvECK97VRZg&index=7
+--yukarıdaki videodan çıkartılmış notlardır
 --https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
 --yukarıda verilen adreste bu kodları deneyebilirsiniz
 
