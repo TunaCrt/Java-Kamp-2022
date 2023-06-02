@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57b895f8-66fb-41b2-a009-e52ca4a501e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java-Kamp-2022.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Odev3.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ders3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders3/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ders3/untitled104.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders3/Java-Kamp-2022.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Odev3.3/src/Kodlamaİo/business/CategoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Odev3.3/src/Kodlamaİo/business/CategoryManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

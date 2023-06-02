@@ -25,7 +25,7 @@ public class CategoryManager {
         for (Category category1 : categories) {
             if (category1.getCategoryName().equals(category.getCategoryName())) {
                 throw new Exception(
-                        "Girdiðiniz kategori adýnda bir kategori mevcut. Lütfen farklý bir kategori giriniz");
+                        "Girdiğiniz kategori adýnda bir kategori mevcut.Lütfen farklı bir kategori giriniz");
             }
         }
         categories.add(category);
