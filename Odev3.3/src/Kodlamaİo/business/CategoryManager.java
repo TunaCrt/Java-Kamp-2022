@@ -28,7 +28,7 @@ public class CategoryManager {
                         "Girdiğiniz kategori adýnda bir kategori mevcut.Lütfen farklı bir kategori giriniz");
             }
         }
-        categories.add(category);
+        //categories.add(category);
         categoryDao.add(category);
 
         for (Logger logger : loggers) {

@@ -26,7 +26,7 @@ public class CourseManager {
                         "Girdğiniz kurs adında bir kurs mevcut. Lütfen farklı bir kurs giriniz");
             }
         }
-        coruses.add(coruse);
+        //coruses.add(coruse);
 
         coruseDao.add(coruse);
 

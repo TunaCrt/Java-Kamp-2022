@@ -15,7 +15,7 @@ public class Main {
         Category category2=new Category(2,"fullsteack");
         Category category3=new Category(3,"frondand");
 
-        Logger[] loggers={};
+        Logger[] loggers={/*new FileLogger(),new MailLogger()*/};
 
         CategoryManager categoryManager=new CategoryManager(new CategoryHibernateDao(),loggers);
         categoryManager.add(category1);
