@@ -5,11 +5,12 @@ public class Main {
         // variables
         String ortaMetin = "İlginizi çekebilir.";
         String altMetin = "Vade Süresi";
+        //Değişken isimleri Java'da camelCase yazılır.
         System.out.println(ortaMetin);
 
         int vade = 12;
 
-        double dolarDunkiDegeri = 18.14;
+        double dolarDun = 18.14;
         double dolarBugun = 18.20;
 
         boolean dolarDustuMu = false;
@@ -18,10 +19,10 @@ public class Main {
         // if-else
         String okYonu = "";
 
-        if (dolarBugun < dolarDunkiDegeri) {
+        if (dolarBugun < dolarDun) {
             okYonu = "down.svg";
             System.out.println(okYonu);
-        } else if (dolarBugun > dolarDunkiDegeri) {
+        } else if (dolarBugun > dolarDun) {
             okYonu = "up.svg";
             System.out.println(okYonu);
         } else {

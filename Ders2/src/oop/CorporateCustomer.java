@@ -1,6 +1,6 @@
 package oop;
 
-public class CorporateCustomer extends Customer{
+public class CorporateCustomer extends Customer{//Kurumsal müşteri bir müşteridir
     private String companyName;
     private  String taxNumber;
 

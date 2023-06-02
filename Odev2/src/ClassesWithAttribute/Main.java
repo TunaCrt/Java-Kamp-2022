@@ -1,7 +1,7 @@
 package ClassesWithAttribute;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//field and attribute ders31
         //        Product product = new Product();
 //        product.name = "Asus Notebook";
 //        product.id = 1;

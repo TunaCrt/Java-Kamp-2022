@@ -12,7 +12,7 @@ public class Product {
         this.price=price;
         this.stockAmount=stockAmount;
     }
-    private int id;
+    private int id;//Bunlara attribute veya field denir.
     private String name;
     private String description;
     private double price;
@@ -20,7 +20,7 @@ public class Product {
 
     public int getId() {
         return id;
-    }
+    }//Encapsulation yani get set metodları
 
     public void setId(int id) {
         this.id = id;
