@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository //bu sınıf bi dataacces nesnesidir
+@Repository //bu sınıf bir dataacces nesnesidir
 public class InMemoryBrandRepository implements BrandRepository {
 
     List<Brand>brands;

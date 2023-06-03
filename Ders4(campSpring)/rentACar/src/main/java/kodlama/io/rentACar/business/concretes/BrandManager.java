@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service//bu sınıf bir business nesnesidir
 public class BrandManager implements BrandService {
     private BrandRepository brandRepository;
 
