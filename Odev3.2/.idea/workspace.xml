@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57b895f8-66fb-41b2-a009-e52ca4a501e0" name="Changes" comment="">
+    <list default="true" id="93aaf96d-a74e-4b9e-adfb-f460f055c46c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Ders2/src/oop/CorporateCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders2/src/oop/CorporateCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ders2/src/oop/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders2/src/oop/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ders2/src/oop/IndividualCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders2/src/oop/IndividualCustomer.java" afterDir="false" />
@@ -14,23 +14,24 @@
       <change beforePath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/core/loging/MailLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/core/loging/MailLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/dataAccess/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/dataAccess/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/dataAccess/jdbcProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Ders3/src/oppWithNLayaredApp/dataAccess/jdbcProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Odev3.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Odev3.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstractClasses/abstractClasses.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstractDemo/abstractDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaceDemo/interfaceDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/interfaces.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overriding/overriding.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polymorphismDemo/polymorphismDemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticDemo/staticDemo.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2QemErlR5KRGnDuuKeDo22OaoFj" />
+  <component name="ProjectId" id="2WWE3w35PFr8AnPbFOriFxh9lY2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,29 +40,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Odev3.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Odev3.3" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="57b895f8-66fb-41b2-a009-e52ca4a501e0" name="Changes" comment="" />
-      <created>1685722312831</created>
+      <changelist id="93aaf96d-a74e-4b9e-adfb-f460f055c46c" name="Changes" comment="" />
+      <created>1696839739597</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685722312831</updated>
+      <updated>1696839739597</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

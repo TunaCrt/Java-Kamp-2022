@@ -1,8 +1,8 @@
 package oppWithNLayaredApp.core.loging;
 
-public class DataBaseLogger implements Logger{
+public class DataBaseLogger implements Logger {
     @Override
     public void log(String data) {
-            System.out.println("veritabanına loglandı: "+data);
+        System.out.println("veritabanına loglandı: " + data);
     }
 }

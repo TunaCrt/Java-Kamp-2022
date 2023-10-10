@@ -1,8 +1,8 @@
 package oop;
 
-public class CorporateCustomer extends Customer{//Kurumsal müşteri bir müşteridir
+public class CorporateCustomer extends Customer {//Kurumsal müşteri bir müşteridir
     private String companyName;
-    private  String taxNumber;
+    private String taxNumber;
 
     public String getCompanyName() {
         return companyName;

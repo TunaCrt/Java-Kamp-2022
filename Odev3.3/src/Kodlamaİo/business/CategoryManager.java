@@ -16,11 +16,11 @@ public class CategoryManager {
     private List<Category> categories = new ArrayList<Category>();
 
 
-
     public CategoryManager(CategoryDao categoryDao, Logger[] loggers) {
         this.categoryDao = categoryDao;
         this.loggers = loggers;
     }
+
     public void add(Category category) throws Exception {
         for (Category category1 : categories) {
             if (category1.getCategoryName().equals(category.getCategoryName())) {
@@ -28,7 +28,7 @@ public class CategoryManager {
                         "Girdiğiniz kategori adýnda bir kategori mevcut.Lütfen farklı bir kategori giriniz");
             }
         }
-        //categories.add(category);
+        categories.add(category);
         categoryDao.add(category);
 
         for (Logger logger : loggers) {

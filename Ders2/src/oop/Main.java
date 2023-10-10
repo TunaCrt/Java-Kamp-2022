@@ -23,14 +23,14 @@ public class Main {
 
 
         System.out.println("<ul>");
-        Product[] products={product1,product2};
-        for (Product product:products){
-            System.out.println("<li>"+product.getName()+"</li>");
+        Product[] products = {product1, product2};
+        for (Product product : products) {
+            System.out.println("<li>" + product.getName() + "</li>");
         }
         System.out.println("</ul>");
 
 
-        IndividualCustomer individualCustomer=new IndividualCustomer();
+        IndividualCustomer individualCustomer = new IndividualCustomer();
         individualCustomer.setId(1);
         individualCustomer.setPhone("1");
         individualCustomer.setCustomerNumber("1");
@@ -38,16 +38,12 @@ public class Main {
         individualCustomer.setLastName("Cört");
 
 
-        CorporateCustomer corporateCustomer=new CorporateCustomer();
+        CorporateCustomer corporateCustomer = new CorporateCustomer();
         corporateCustomer.setId(2);
         corporateCustomer.setPhone("2");
         corporateCustomer.setCustomerNumber("2");
         corporateCustomer.setCompanyName("Tuna");
         corporateCustomer.setTaxNumber("2");
 
-
-
     }
-
-
 }

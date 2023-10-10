@@ -25,8 +25,13 @@ public class CourseManager {
                 throw new Exception(
                         "Girdğiniz kurs adında bir kurs mevcut. Lütfen farklı bir kurs giriniz");
             }
+            if (coruse.getUnıtPrice()<0){
+                throw new Exception(
+                  "kursun fiyatı 0'dan küçük olamaz"
+                );
+            }
         }
-        //coruses.add(coruse);
+        coruses.add(coruse);
 
         coruseDao.add(coruse);
 

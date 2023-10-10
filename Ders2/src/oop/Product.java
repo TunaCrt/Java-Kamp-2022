@@ -1,7 +1,8 @@
 package oop;
-             //PascalCase
+
+//PascalCase
 public class Product {
-                   //camelCase
+    //camelCase
     private String name;
     private double unitPrice;
     private double discount;

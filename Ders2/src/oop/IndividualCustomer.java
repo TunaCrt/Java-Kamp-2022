@@ -1,6 +1,6 @@
 package oop;
 
-public class IndividualCustomer extends Customer{//Bireysel müşteri bir müşteridir
+public class IndividualCustomer extends Customer {//Bireysel müşteri bir müşteridir
     private String firtName;
     private String lastName;
 
